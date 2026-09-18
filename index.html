@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/scroll.css" />
+    <link rel="stylesheet" href="./styles/colors.css" />
+  </head>
+  <body>
+    <header class="head-container section">
+      <div id="head">
+        <div class="img-container-ellipse">
+          <img
+            src="./images/avatar.jpg"
+            title="avatar"
+            width="50%"
+            alt="avatar"
+          />
+        </div>
+
+        <h1>Gaaznmazn</h1>
+        <p>IT специалист.<br />Python - разработчик</p>
+        <button id="navigation-btn">Навигация</button>
+
+        <nav class="head-navigation">
+          <a href="#about-me">Обо мне</a>
+          <a href="#my-projects">Мои проекты</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="main-container">
+      <section id="grid-container-about-me" class="section container-about-me">
+        <div id="about-me" class="about-me-body">
+          <article class="card-about-me">
+            <h2>Мои навыки</h2>
+            <p>
+              Языки программирования: Python. Уверенный пользователь таких
+              библиотек как pandas, numpy, playwright и др.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section carousel-container">
+        <div id="my-projects" class="my-project-container">
+          <article class="card-my-project">
+            <h2>Hollow Guides</h2>
+            <p>
+              Мой сайт-проект по игре Zenless Zone Zero. Отборные гайды, которые
+              помогут всем новичкам начать свой путь прокси.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer id="foot" class="footer-container"></footer>
+    <script src="./srcipts/about-me-card.js"></script>
+    <script src="./srcipts/my-project-card.js"></script>
+    <script src="./srcipts/navigation.js"></script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 1.2em;
+}
+/* Стили хедера */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+  border-radius: 64px;
+}
+
+#head > p {
+  text-indent: 1.5em;
+}
+
+#head > button {
+  border: none;
+}
+
+.head-navigation {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.head-navigation.view {
+  opacity: 1;
+  visibility: visible;
+}
+
+.img-container-ellipse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: ellipse(20% 40%);
+}
+
+.img-container-ellipse > img {
+  transform: scale(0.9) translateY(0.4em);
+  transition: 1s;
+}
+
+.img-container-ellipse:hover img {
+  transform: scale(1.02);
+}
+
+/* Стили обо мне */
+#grid-container-about-me {
+  height: 100vh;
+}
+
+#about-me {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  margin: auto;
+  gap: 0.4em;
+  width: 80vw;
+}
+
+.card-about-me {
+  padding: 0.5em;
+  aspect-ratio: 1;
+  border-radius: 32px;
+}
+
+.card-about-me > h2 {
+  text-indent: 1.2em;
+}
+.card-about-me > p {
+  text-indent: 0.6em;
+}
+/* Стили проектов */
+.carousel-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 6em;
+}
+
+.carousel-container::-webkit-scrollbar {
+  display: none;
+}
+
+#my-projects {
+  display: flex;
+  gap: 0.4em;
+  height: 30vh;
+}
+
+.card-my-project {
+  width: 40vw;
+  height: 30vh;
+  text-align: center;
+  border-radius: 32px;
+}

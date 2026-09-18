@@ -1,0 +1,54 @@
+:root {
+  --bg-deep: #ddcecd; /* Дальний фон (Dust Grey) */
+  --bg-surface: #eee5e5; /* Ближний фон и карточки (Parchment) */
+
+  /* Типографика */
+  --text-main: #37392e; /* Основной текст (Charcoal Brown) */
+
+  /* Интерактив и акценты */
+  --accent-blue: #19647e; /* Заголовки + рамки*/
+  --accent-teal: #28afb0; /* Ховеры + тени */
+}
+
+body {
+  background-color: var(--bg-deep);
+}
+
+#head {
+  background-color: var(--bg-surface);
+  border: 2px solid var(--accent-blue);
+  box-shadow:
+    15px 15px 30px var(--accent-teal),
+    15px -15px 30px var(--accent-teal);
+}
+
+.card-about-me,
+.card-my-project {
+  background-color: var(--bg-surface);
+  border: 2px solid var(--accent-blue);
+}
+
+.card-about-me {
+  box-shadow: 15px 15px var(--accent-teal);
+}
+
+button {
+  background-color: var(--bg-surface);
+}
+
+button:active {
+  background-color: var(--bg-deep);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--accent-blue);
+}
+
+p {
+  color: var(--text-main);
+}
